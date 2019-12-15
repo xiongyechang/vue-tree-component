@@ -40,6 +40,7 @@
 		methods: {
 			handleNodeClick(data){
 				data.expand = !data.expand;
+				this.$emit('node-click', data);
 			}
 		}
 	}

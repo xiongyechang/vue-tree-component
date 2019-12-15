@@ -3,6 +3,7 @@
     <tree-node
       :data="node"
       v-for="(node, index) of data"
+      v-on="$listeners"
       :key="index">
     </tree-node>
   </div>

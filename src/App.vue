@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <tree :data="data"></tree>
+    <tree :data="data" @node-click="nodeClickHandler"></tree>
   </div>
 </template>
 
@@ -37,6 +37,11 @@ export default {
         }]
     }
   },
+  methods: {
+    nodeClickHandler(data){
+      console.log(data);
+    }
+  }
 }
 </script>
 
